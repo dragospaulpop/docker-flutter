@@ -5,13 +5,21 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Flutter Web (web-server)",
+      "name": "Flutter Docker",
       "request": "launch",
       "type": "dart",
       "program": "lib/main.dart",
       "args": ["-d", "web-server", "--web-hostname", "0.0.0.0", "--web-port", "3000"],
       "cwd": "${workspaceFolder}",
       "preLaunchTask": "flutter-clean"
+    },
+    {
+      "name": "Flutter Local",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["-d", "web-server"],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }
