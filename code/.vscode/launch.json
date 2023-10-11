@@ -11,7 +11,15 @@
       "program": "lib/main.dart",
       "args": ["-d", "web-server", "--web-hostname", "0.0.0.0", "--web-port", "3000"],
       "cwd": "${workspaceFolder}",
-      "preLaunchTask": "flutter-clean"
+      "preLaunchTask": "flutter-pre-launch"
+    },
+    {
+      "name": "Flutter Android Emulator",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": ["-d", "emulator-5554"],
+      "cwd": "${workspaceFolder}"
     }
   ]
 }

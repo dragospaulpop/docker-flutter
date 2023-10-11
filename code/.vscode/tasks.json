@@ -14,6 +14,35 @@
         "reveal": "always",
         "panel": "new"
       }
+    },
+    {
+      "label": "flutter-pub-get",
+      "type": "shell",
+      "command": "flutter",
+      "args": ["pub", "get"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "flutter-pre-launch",
+      "dependsOn": ["flutter-clean", "flutter-pub-get"],
+      "type": "shell",
+      "command": "echo", // You can use any command here, as it's just a placeholder.
+      "args": ["Pre-launch tasks completed."],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
     }
   ]
 }
